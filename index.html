@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!--  Inicio carrusel-->
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/img1.jpg" alt="paisaje" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img2.jpg" alt="paisaje2" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img3.jpg" alt="paisaje3" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img4.jpg" alt="paisaje4" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img5.jpg" alt="paisaje5S" class="d-block w-100">
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+    <!--Fin Carrusel-->
+
+    <h3>EN LA PARTE DE ABAJO ESTA CREADA LA TARJETA</h3>
+    <p>no sabia que tocaba hacer otra carpeta profe.</p>
+     <!--Inicio ventana MODAL1-->
+
+    <!-- Button to Open the Modal -->
+<div class="container mt-3"></div>
+     <h3>MODAL 1</h3>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+     abrir ventana modal
+    </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+      <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Bienvenido a la upc</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+      <!-- Modal body -->
+        <div class="modal-body">
+          <video src="video/video1.mp4" controls width="100%"></video>
+        </div>
+
+      <!-- Modal footer -->
+        <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <!--Fin ventana MODAL1-->
+
+    <!--Inicio ventana MODAL2 PDF-->
+    <!-- Button to Open the Modal -->
+
+<h3>MODAL 2</h3>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+  Open modal
+</button>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal2">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <a href="documentos/Diagrama en blanco.pdf" download> link </a>
+
+        <iframe src="documentos/Diagrama en blanco.pdf" width="100%" height="100%"></iframe>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <!--Fin ventana MODAL2-->
+
+    <!--Inicio ventana MODAL3-->
+    <!-- The Modal -->
+<div class="modal" id="myModal3">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Informacion ardillas</h4>
+        
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p><b> Nombre: </b> Ardilla</p>
+        <p><b>Nombre cientifico: </b> si</p>
+        <p><b>Ubicacion:  </b> bosques </p>
+        <p><b>Comida: </b> frutas</p>  
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <!--Fin ventana MODAL3-->
+
+
+
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <button type="button" class="btn btn-primary">Primary</button>
+
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Books</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sobre nosotros
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Misión</a></li>
+                      <li><a class="dropdown-item" href="#">Visión </a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Políticas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3" style="background-color: rgb(2, 109, 109);">Columna 1
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti adipisci facilis esse aliquid ab velit nihil quasi rerum architecto est optio explicabo veritatis porro, dicta atque recusandae molestiae fugit!</p>
+            </div>
+            <div class="col-sm-3" style="background-color: chocolate;">Columna 2</div>
+            <div class="col-sm-6" style="background-color: palevioletred;">Columna 3</div>
+
+        </div>
+
+    </div>
+
+        <img src="img/img4.jpg" alt="" style="width: 100%;">
+            
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" style="background-color: rgb(168, 168, 34);">Columna 1
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto in quo commodi magnam odit nostrum quasi iure rerum, accusamus quae cumque error ipsa! Hic fugiat illo magnam voluptate, accusamus natus?</P>
+        </div>
+        <div class="col-sm-2" style="background-color: rgb(155, 26, 26);">Columna 2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet quod, doloremque minus quam nisi molestias, error saepe a, ea odio ab ut consectetur. Explicabo autem aliquid dolor voluptas aliquam.</p>
+        </div>
+        <div class="col-sm-6" style="background-color: rgb(202, 117, 5);">Columna 3
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet quod, doloremque minus quam nisi molestias, error saepe a, ea odio ab ut consectetur. Explicabo autem aliquid dolor voluptas aliquam.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">Columna 1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio ipsa rem necessitatibus, velit, molestiae soluta ipsam hic repudiandae sunt aspernatur ipsum reprehenderit tempore quae facilis est, corporis delectus obcaecati.</p>
+        </div>
+
+        <div class="col-sm-6">Columna 1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio ipsa rem necessitatibus, velit, molestiae soluta ipsam hic repudiandae sunt aspernatur ipsum reprehenderit tempore quae facilis est, corporis delectus obcaecati.</p>
+        </div>
+    </div>
+
+</div>
+
+<!--Inicio tarjeta-->
+
+<div class="container mt-3">
+  <h2>Tarjetas</h2>
+  <p>Programacion IV</p>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="img/img6.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"> Ardillas </h4>
+      <p class="card-text">ardillas saltarinas</p>
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">
+      informacion ardilla
+    </div>
+  </div>
+  <br>
+  
+  
+</div>
+
+<!--Fin tarjeta-->
+<footer style="background-color: coral;">
+    Página web realizada por Wilmer Beltran con Bootstrap
+
+</footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
